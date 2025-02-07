@@ -29,7 +29,10 @@ public class Menu {
                     System.out.println("} has been created");
                     break;
                 case 2:
-                    //case 2 
+                    int min=MinimumMaximum.findMinimum(cs.currentArray);
+                    System.out.println("The minimum element of the array is "+min);
+                    int max=MinimumMaximum.findMaximum(cs.currentArray);
+                    System.out.println("The maximum element of the array is "+max); 
                     break;
                 case 3:
                     Average.average(cs.currentArray);
