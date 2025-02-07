@@ -20,19 +20,6 @@ public class CS102_Task02{
         return newArray;
     }
 
-   /* public void displayMenu()
-    {
-        int choice;
-       if (scanner.hasNextInt()) 
-       {
-            do{
-                choice = scanner.nextInt();
-                
-
-            }while(choice!=4);
-            
-       }
-    } */
 
     public void findSums(int[] arr){
         int countOdd=0;
@@ -43,8 +30,8 @@ public class CS102_Task02{
         for(int i=1;i<arr.length;i+=2){
             countOdd+=arr[i];
         }
-        System.out.println(countEven);
-        System.out.println(countOdd);
+        System.out.println("Sum of elements with even numbered indexes : " + countEven); 
+        System.out.println("Sum of elements with odd numbered indexes : " + countOdd);
 
     }
     

@@ -22,6 +22,6 @@ public class Average {
             System.out.print(element + ", ");
         }
 
-        System.out.print("]");
+        System.out.println("]");
     } 
 }
