@@ -6,6 +6,7 @@ public class CS102_Task02{
     public Scanner scanner = new Scanner(System.in);
     public final int LOWER_BOUNDRY = 0;
     public final int UPPER_BOUNDRY = 100;
+    int[] currentArray;
 
     // this method creates an array with given size which consists of random numbers up to 100
     public int[] createAnArray(int size)
@@ -33,14 +34,14 @@ public class CS102_Task02{
        }
     } */
 
-    public void findSums(){
+    public void findSums(int[] arr){
         int countOdd=0;
         int countEven=0;
-        for(int i=0;i<array;i+=2){
-            countEven+=array[i];
+        for(int i=0;i<arr.length;i+=2){
+            countEven+=arr[i];
         }
-        for(int i=1;i<array;i+=2){
-            countOdd+=array[i];
+        for(int i=1;i<arr.length;i+=2){
+            countOdd+=arr[i];
         }
         System.out.println(countEven);
         System.out.println(countOdd);
@@ -49,6 +50,7 @@ public class CS102_Task02{
     
     
     public static void main(String[] args) {
-        
+        Menu menu=new Menu();
+        menu.displayMenu();
     }
 }

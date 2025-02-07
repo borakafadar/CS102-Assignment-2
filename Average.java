@@ -1,4 +1,4 @@
-public class d {
+public class Average {
     
     public static void average(int[] nums){
 
