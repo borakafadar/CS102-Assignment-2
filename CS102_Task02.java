@@ -32,6 +32,20 @@ public class CS102_Task02{
             
        }
     } */
+
+    public void findSums(){
+        int countOdd=0;
+        int countEven=0;
+        for(int i=0;i<array;i+=2){
+            countEven+=array[i];
+        }
+        for(int i=1;i<array;i+=2){
+            countOdd+=array[i];
+        }
+        System.out.println(countEven);
+        System.out.println(countOdd);
+
+    }
     
     
     public static void main(String[] args) {
